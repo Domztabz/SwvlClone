@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TripsDetailActivity">
+
+
+    <LinearLayout
+            android:id="@+id/toolbar"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_margin="20dp"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView
+                    android:textSize="32sp"
+                    android:text="97"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="Boarding Pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <LinearLayout
+                    android:id="@+id/top_ll"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/driver_profile_pic"
+                        android:src="@drawable/driver"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"/>
+                <ImageView
+                        android:src="@drawable/van"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"/>
+
+                <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:maxLines="2"
+                            android:text="Leonard Kipng'etich Tirop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:text="Hiace-KCT 781A"
+                            android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                
+            </LinearLayout>
+            <View
+                    android:id="@+id/top_divider"
+                    android:layout_below="@+id/top_ll"
+                    android:background="@color/lightGrey_"
+                    android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout
+                    android:id="@+id/destinations_ll"
+                    android:padding="8dp"
+                    android:layout_below="@+id/top_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="THU 05/12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_below="@+id/top_divider"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <View
+                            android:background="@drawable/view_bg"
+                            android:layout_width="4dp"
+                            android:layout_height="80dp"/>
+                    <TextView
+                            android:textColor="@color/lightGrey_"
+                            android:id="@+id/from"
+                            android:layout_marginStart="16dp"
+                            android:text="From"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_below="@+id/from"
+                            android:layout_marginStart="16dp"
+                            android:id="@+id/available_start"
+                            android:text="Bungoma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_below="@id/available_start"
+                            android:textColor="@color/lightGrey_"
+                            android:id="@+id/to"
+                            android:layout_marginStart="16dp"
+                            android:text="To"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_marginStart="16dp"
+                            android:layout_below="@+id/to"
+                            android:id="@+id/available_end"
+                            android:text="Nakuru"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:id="@+id/bottom_divider"
+                    android:layout_below="@+id/destinations_ll"
+                    android:background="@color/lightGrey_"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            <LinearLayout
+                    android:id="@+id/net_fare_ll"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@+id/bottom_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:textSize="24sp"
+                            android:text="200 KES"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:textSize="16sp"
+                            android:text="Cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                      android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:textSize="16sp"
+                            android:text="Number of Seats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_gravity="end"
+                            android:textSize="24sp"
+                            android:text="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/base_fare_ll"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/net_fare_ll"
+                    android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:text="Base Fare"
+                        android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text="200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/base_fare_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:textColor="@color/colorRed"
+                        android:text="Debt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:textColor="@color/colorRed"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "92768953567",
+    "firebase_url": "https://swvlclone.firebaseio.com",
+    "project_id": "swvlclone",
+    "storage_bucket": "swvlclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92768953567:android:18ef90ea44d1e79083f56a",
+        "android_client_info": {
+          "package_name": "com.andromeda.swvlclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92768953567-67civ86dmfp5c7vvfse2vk80i88f0ab3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andromeda.swvlclone",
+            "certificate_hash": "612bc4ba145b9c1b2c9ed0163e1b815564b9408d"
+          }
+        },
+        {
+          "client_id": "92768953567-go1moslk1cop7hq98bj0fvnhhprrad3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkb6afOZwL7oFVUgOH0PTiCsGWlOm1ClI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92768953567-go1moslk1cop7hq98bj0fvnhhprrad3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
